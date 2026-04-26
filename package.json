@@ -1,0 +1,22 @@
+{
+  "name": "web-scrapper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web scraper assessment using TypeScript and Playwright.",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "check": "tsc --project tsconfig.json --noEmit",
+    "start": "tsx src/index.ts",
+    "start:compiled": "node dist/src/index.js",
+    "test": "node --import tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "playwright": "^1.54.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}
