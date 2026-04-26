@@ -67,6 +67,8 @@ outputs/
 - `errors.log`: timestamped scrape failures for that run
 - `blocked_skus.json`: CAPTCHA or anti-bot blocked SKUs that should be retried later
 
+For deliverables compatibility, `product_data.csv` and `errors.log` from the latest run are also copied to the root directory (overwriting any previous versions).
+
 ## Assumptions
 
 - Amazon SKUs are ASINs and Walmart SKUs are item IDs.
